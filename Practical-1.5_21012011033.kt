@@ -1,31 +1,20 @@
-fun displayMonthName(month: Int) {
-    val monthName = when (month) {
-        1 -> "January"
-        2 -> "February"
-        3 -> "March"
-        4 -> "April"
-        5 -> "May"
-        6 -> "June"
-        7 -> "July"
-        8 -> "August"
-        9 -> "September"
-        10 -> "October"
-        11 -> "November"
-        12 -> "December"
-        else -> "Invalid month"
+fun main()
+{
+    print("Enter Month Number: ")
+    var mon:Int= readLine()!!.toInt()
+    when(mon){
+        1->println("Jan")
+        2->println("Feb")
+        3->println("March")
+        4->println("Apr")
+        5->println("May")
+        6->println("Jun")
+        7->println("Jul")
+        8->println("Aug")
+        9->println("Sep")
+        10->println("Oct")
+        11->println("Nov")
+        12->println("Dec")
+        else->print("Enter valid Month")
     }
-    print("Enter a Number: ")
-    val month = readLine()!!
-    print("$monthName \n\n")
-
-    print("Enter a Number: \n\n")
-
-    print("Plese Enter proper Number ")
-
-
-
-}
-
-fun main() {
-    displayMonthName(4)
 }
